@@ -15,9 +15,12 @@
 #### Once built:
 - Navigate to `./RiskPlayerManagerAgent/RiskPlayerManagerAgent/bin/Release/net-9.0`
 - `RiskPlayerManagerAgent.exe` will be right there. (Need to run as Administrator or it most likely won't work)
+
+  
 ### Running Server
 
 #### Steps:
 - `cd ./risk-player-manager-server`
+- `npm install`
 - `node index.js`
 - Open http://localhost:3000/ in your browser
