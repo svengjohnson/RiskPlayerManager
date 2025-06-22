@@ -1,3 +1,7 @@
+# Risk Player Manager
+
+## Description
+
 ### What it does:
 When a new player joins your RISK Game Lobby, it's username, device ID, and user ID will be listed within the manager.
 That lets you mark players as desirable, undesirable, and see all the previous times the player has joined your lobby. It also detects alt accounts from people you've played with, as it also matches on deviceID.
@@ -19,7 +23,8 @@ It's purely network-traffic based - the game memory is not being touched at all!
 - - This event is treated as a lobby-change event, and they make a resetLobby API call to the Server, which will clear the current player list.
 
 #### What the Server does:
-- Accepts API calls from the Agent
+- Accepts API calls from the Agent and stores the Player data
+- The player data is stored in a SQLite3 database file, which is created once the Server is started.
 - Serves a frontend for the Player Manager on http://localhost:3000/
 
 ## Building & Running
@@ -44,7 +49,6 @@ For this to work, both the Agent and the Server need to be running, and getting 
 - Navigate to `./RiskPlayerManagerAgent/RiskPlayerManagerAgent/bin/Release/net-9.0`
 - `RiskPlayerManagerAgent.exe` will be right there. (Need to run as Administrator or it most likely won't work)
 
-  
 ### Running Server
 
 #### Steps:
@@ -52,3 +56,4 @@ For this to work, both the Agent and the Server need to be running, and getting 
 - `npm install`
 - `node index.js`
 - Open http://localhost:3000/ in your browser
+- Once the first player joins the lobby (this will almost certainly be yourself), a file `my-user-ids.txt` will be created in the `risk-player-manager-server` directory. Add your user ID to it, so it gets ignored.
