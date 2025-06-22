@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lobby</title>
+    <script src="/script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007acc;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #007acc;
+            color: white;
+        }
+
+        button {
+            padding: 6px 12px;
+            margin: 2px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #007acc;
+            color: white;
+        }
+
+        .green {
+            padding: 6px 12px;
+            margin: 2px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #08a425;
+            color: white;
+        }
+
+        .red {
+            padding: 6px 12px;
+            margin: 2px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #b20d0d;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #005b99;
+        }
+
+        .history {
+            background-color: #fefefe;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+        }
+
+        .history td {
+            padding: 12px;
+            background-color: #fafafa;
+            border-top: 2px solid #007acc;
+        }
+
+        .history table {
+            width: 100%;
+            margin-top: 10px;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .history th {
+            background-color: #e9f3fb;
+            color: #333;
+            font-size: 13px;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .history td {
+            border: 1px solid #ddd;
+            padding: 6px;
+            text-align: center;
+        }
+
+        .history td:first-child {
+            font-weight: bold;
+        }
+
+        .status-emoji {
+            font-size: 2em; /* adjust size as you want */
+            /* Optional for better vertical alignment */
+            line-height: 1;
+            text-align: center;
+        }
+
+        .neutral {
+            background-color: #fff;
+        }
+
+        .whitelisted {
+            background-color: #03681c;
+            color: white;
+        }
+
+        .blacklisted {
+            background-color: #800618;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<h1>Risk Player Manager</h1>
+<table id="lobbyTable">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Device ID</th>
+        <th>User ID</th>
+        <th>Whitelist</th>
+        <th>Blacklist</th>
+        <th>Kick</th>
+        <th>History</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+</body>
+</html>
