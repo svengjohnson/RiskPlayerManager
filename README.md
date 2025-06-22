@@ -35,6 +35,8 @@ For this to work, both the Agent and the Server need to be running, and getting 
 - .NET 9.0 SDK
 - node.js 22
 - npm 10
+- WinPcap/Npcap driver.
+- - The easiest way to get the correct one is by installing [Wireshark](https://www.wireshark.org/download.html). You don't need to run it at all, it just needs to be installed for the driver.
 
 ### Building & Running Agent:
 
