@@ -3,7 +3,7 @@
 - node.js 22
 - npm 10
 
-### Building Agent:
+### Building & Running Agent:
 
 #### Steps:
 - `cd ./RiskPlayerManagerAgent/RiskPlayerManagerAgent`
@@ -12,7 +12,7 @@
 - `dotnet add package PacketDotNet`
 - `dotnet publish`
 
-#### Once built:
+#### Once Built:
 - Navigate to `./RiskPlayerManagerAgent/RiskPlayerManagerAgent/bin/Release/net-9.0`
 - `RiskPlayerManagerAgent.exe` will be right there. (Need to run as Administrator or it most likely won't work)
 
