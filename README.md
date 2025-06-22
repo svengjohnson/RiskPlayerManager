@@ -14,8 +14,7 @@
 
 #### Once built:
 - Navigate to `./RiskPlayerManagerAgent/RiskPlayerManagerAgent/bin/Release/net-9.0`
-- `RiskPlayerManagerAgent.exe` will be right there. Run as admin and the agent should start.
-
+- `RiskPlayerManagerAgent.exe` will be right there. (Need to run as Administrator or it most likely won't work)
 ### Running Server
 
 #### Steps:
