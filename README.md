@@ -1,7 +1,7 @@
 ### Prerequisites
 - .NET 9.0 SDK
-- node.js 22.15
-- npm 10.9
+- node.js 22
+- npm 10
 
 ### Building Agent:
 
