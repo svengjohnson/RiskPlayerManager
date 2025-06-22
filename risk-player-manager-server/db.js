@@ -81,7 +81,7 @@ module.exports = {
 
     playerSeen: (name, deviceId, userId) => {
         const stmt = db.prepare(`
-      INSERT INTO seen (name, deviceId, userId,) 
+      INSERT INTO seen (name, deviceId, userId) 
       VALUES (?, ?, ?)
     `);
         stmt.run(name, deviceId, userId);
